@@ -101,3 +101,24 @@ body {
         opacity: 0;
     }
 }
+
+/* Botón de mensaje secreto */
+.boton-secreto {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Mensaje secreto oculto */
+.mensaje-secreto {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #ff4081;
+    transition: opacity 1s ease-in-out;
+}

@@ -20,21 +20,21 @@ function createHeart() {
     heart.classList.add('heart');
     heart.innerHTML = '❤️';
     
-    // Posición aleatoria en la parte inferior de la pantalla
     heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.bottom = '-50px'; // Empieza un poco más abajo del borde
+    heart.style.bottom = '-50px';
 
-    // Tamaño aleatorio de los corazones
-    let size = Math.random() * 20 + 10; // Entre 10px y 30px
+    let size = Math.random() * 20 + 10;
     heart.style.fontSize = size + 'px';
 
-    // Animación con duración aleatoria
-    heart.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Entre 2s y 5s
+    heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
 
     container.appendChild(heart);
 
-    // Eliminar corazones después de que terminen su animación
     setTimeout(() => {
         heart.remove();
     }, 5000);
+}
+
+function mostrarMensaje() {
+    document.getElementById('mensaje-secreto').style.display = 'block';
 }
