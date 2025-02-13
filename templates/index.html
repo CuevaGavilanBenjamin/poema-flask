@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poema para Lucía</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="door-frame">
+            <div class="door left-door" onclick="openDoor()"></div>
+            <div class="door right-door" onclick="openDoor()"></div>
+        </div>
+        <div class="poem-container" id="poem-container">
+            <div class="hearts-container"></div>
+            <h1>Poema para Lucía ❤️</h1>
+            <p>No necesito un solo febrero,<br>
+               ni calendarios que dicten mi amor,<br>
+               tú eres mi fiesta, mi luz, mi sendero,<br>
+               mi San Valentín en cada rincón.</p>
+            <p>Las rosas mueren, el tiempo avanza,<br>
+               pero en mis brazos sigues en flor,<br>
+               pues nuestro amor no sigue balanzas,<br>
+               late constante, sin fin ni razón.</p>
+            <p>Si el mundo olvida celebrar el deseo,<br>
+               si el calendario decide callar,<br>
+               yo en cada beso, en cada "te quiero",<br>
+               hallo mi fiesta, mi eterno soñar.</p>
+            <p>Lucía, mi vida, mi dulce fortuna,<br>
+                sin importar el día o el mes,<br>
+                serás mi eterna, mi única luna,<br>
+                mi San Valentín una y otra vez.</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
